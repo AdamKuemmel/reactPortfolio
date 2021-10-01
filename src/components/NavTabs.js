@@ -6,9 +6,10 @@ const styles = {
     display: "flex",
     backgroundColor: "#0c0c0c",
   },
+  navbarNav: {},
   buttons: {
-    marginLeft: "70%",
-    marginRight: "5%",
+    // marginLeft: "70%",
+    // marginRight: "5%",
     color: "#edf1cf",
   },
   ak: {
@@ -24,7 +25,7 @@ const styles = {
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <nav style={styles.navBar} class="navbar navbar-expand-lg navbar-light ">
+    <nav style={styles.navBar} class="navbar navbar-expand-lg navbar-dark ">
       <a
         class="navbar-brand"
         onClick={() => handlePageChange("Home")}
@@ -74,7 +75,7 @@ function NavTabs({ currentPage, handlePageChange }) {
                 currentPage === "Project" ? "nav-link active" : "nav-link"
               }
             >
-              Projects
+              Work
             </a>
           </li>
           <li class="nav-item">
