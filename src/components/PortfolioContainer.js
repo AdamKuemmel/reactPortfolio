@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
-import LightboxExample from "./pages/Lightbox";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -15,12 +14,7 @@ export default function PortfolioContainer() {
       return <Home />;
     }
     if (currentPage === "About") {
-      return (
-        <>
-          <About />
-          <LightboxExample />
-        </>
-      );
+      return <About />;
     }
     if (currentPage === "Project") {
       return <Project />;
@@ -34,7 +28,7 @@ export default function PortfolioContainer() {
     <div>
       {/* // TODO: Add a comment describing what we are passing as props */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-
+      {/* // TODO: Add a comment explaining what is happening on the following line */}
       {renderPage()}
     </div>
   );

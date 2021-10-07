@@ -11,7 +11,6 @@ const styles = {
     marginLeft: "11%",
     fontFamily: "'Montserrat', sans-serif",
     color: "#edf1cf",
-    textAlign: "center",
   },
 };
 

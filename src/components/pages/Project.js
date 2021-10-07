@@ -2,7 +2,6 @@ import React from "react";
 import vibeForecast from "../../images/vibeForecast.png";
 import sideSwipe from "../../images/sideSwipe.png";
 import placeHolder from "../../images/placeHolder.png";
-import "mdb-react-ui-kit/dist/css/mdb.min.css";
 
 const styles = {
   singleProj: {
@@ -48,7 +47,6 @@ export default function Project() {
       <h1 style={styles.title}>Recent Work</h1>
       <article style={styles.singleProj}>
         <a
-          className="bg-image hover-zoom"
           href="https://adamkuemmel.github.io/theVibeForecast/"
           target="_blank"
         >
@@ -64,7 +62,7 @@ export default function Project() {
           listen in case you would like to come back and listen again!
         </h4>
       </article>
-      <article className="bg-image hover-zoom" style={styles.singleProj}>
+      <article style={styles.singleProj}>
         <a href="https://thawing-mesa-73583.herokuapp.com/" target="_blank">
           <img src={sideSwipe} style={styles.img} alt="sideSwipe" />
         </a>
@@ -78,7 +76,7 @@ export default function Project() {
           </h4>
         </div>
       </article>
-      <article className="bg-image hover-zoom" style={styles.singleProj}>
+      <article style={styles.singleProj}>
         <a href="https://evening-atoll-81356.herokuapp.com/" target="_blank">
           <img src={placeHolder} style={styles.img} alt="notetakerproj" />
         </a>
