@@ -2,8 +2,6 @@ import React from "react";
 import vibeForecast from "../../images/vibeForecast.png";
 import sideSwipe from "../../images/sideSwipe.png";
 import placeHolder from "../../images/placeHolder.png";
-import "bootstrap-css-only/css/bootstrap.min.css";
-import "mdbreact/dist/css/mdb.css";
 
 const styles = {
   singleProj: {
