@@ -3,6 +3,7 @@ import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css"; // This only needs to be imported once in your app
 import resume from "../../images/sampleResume.png";
 import dowloadRES from "../../images/AKresume.pdf";
+import "mdb-react-ui-kit/dist/css/mdb.min.css";
 
 const images = [resume];
 const styles = {
