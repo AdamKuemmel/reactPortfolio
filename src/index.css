@@ -2,3 +2,18 @@
   justify-content: flex-end;
   margin-right: 4%;
 }
+
+@media screen and (max-width: 990px) {
+  .keyImage {
+    width: 90%;
+  }
+  .homeH1 {
+    margin: 1%;
+  }
+  .homeP {
+    margin: 1%;
+  }
+  .aboutH1 {
+    text-align: center;
+  }
+}

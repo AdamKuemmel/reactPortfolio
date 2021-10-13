@@ -5,7 +5,9 @@ const styles = {
     color: "grey",
     marginTop: "15%",
   },
-  p: {},
+  p: {
+    marginTop: "4%",
+  },
   div: {
     marginRight: "11%",
     marginLeft: "11%",
@@ -16,17 +18,14 @@ const styles = {
 
 export default function About() {
   return (
-    <div style={styles.div}>
+    <div style={styles.div} className="aboutH1">
       <h1>Adam Kuemmel</h1>
-      <p>
+      <p style={styles.p}>
         Hello, my name is Adam and I am a full stack web developer born and
-        raised in New York City. My love for web development all began in 2008
-        during the punk-scene kid era, designing in depth HTML myspace layouts
-        for all of my hXc friends. This then migrated into a job designing
-        websites for local bands in my area using JOOMLA templates for extra
-        cash. After diverting to work with my Engineering Science degree for
-        years, i have recently graduated The Full-stack Web development program
-        at The University of Denver.
+        raised in New York. My love for web development all began in 2008 during
+        the punk-scene kid era, designing in depth HTML myspace layouts for all
+        of my hXc friends. This then migrated into a side-job designing websites
+        for local bands in my area using JOOMLA templates for extra cash.
       </p>
       <p>
         Although I am fluent in JavaScript, HTML, CSS and various other coding
