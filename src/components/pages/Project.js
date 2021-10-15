@@ -45,49 +45,52 @@ export default function Project() {
   return (
     <div>
       <h1 style={styles.title}>Recent Work</h1>
+      <article className="bg-image hover-zoom" style={styles.singleProj}>
+        <a href="https://evening-atoll-81356.herokuapp.com/" target="_blank">
+          <img src={placeHolder} id="projIMG" alt="notetakerproj" />
+        </a>
+        <div>
+          <h4 id="projWords">
+            BrewScript! This application showcases my abilities to work with
+            GraphQl and React. BrewScript is a subscription box platform that
+            allows user to signup, pick their box, edit their box as well as
+            browse our inventory and add things to upcoming orders. This month
+            we did a Spo0oky theme!
+          </h4>
+        </div>
+      </article>
       <article style={styles.singleProj}>
         <a
-          className="bg-image hover-zoom"
           href="https://adamkuemmel.github.io/theVibeForecast/"
           target="_blank"
         >
-          <img src={vibeForecast} style={styles.img} alt="vibeForcast" />
+          <img
+            id="projIMG"
+            src={vibeForecast}
+            // style={styles.img}
+            alt="vibeForcast"
+          />
         </a>
 
         {/* <h4 style={styles.title}>TheVibeForecast</h4> */}
-        <h4 style={styles.words}>
+        <h4 id="projWords">
           Do you ever have a hard time figuring out what to listen to? Vibe
           forecast is here to help with that. Using multiple API's, The Vibe
-          forecast will find and display a music video for you, all based of
+          forecast will find and display a music video for you, all based off of
           your local weather. This application will also save all of your recent
           listen in case you would like to come back and listen again!
         </h4>
       </article>
       <article className="bg-image hover-zoom" style={styles.singleProj}>
         <a href="https://thawing-mesa-73583.herokuapp.com/" target="_blank">
-          <img src={sideSwipe} style={styles.img} alt="sideSwipe" />
+          <img src={sideSwipe} id="projIMG" alt="sideSwipe" />
         </a>
         <div>
-          {/* <h4 style={styles.title}>sideSwipe</h4> */}
-          <h4 style={styles.words}>
+          <h4 id="projWords">
             SideSwipe is a full stack application that allows a user to buy,
             sell and browse vehicles. A user has the option to hop on this
             website, create a profile and continue to log back in whenver they
             would like!
-          </h4>
-        </div>
-      </article>
-      <article className="bg-image hover-zoom" style={styles.singleProj}>
-        <a href="https://evening-atoll-81356.herokuapp.com/" target="_blank">
-          <img src={placeHolder} style={styles.img} alt="notetakerproj" />
-        </a>
-        <div>
-          {/* <h4 style={styles.title}>input proj 3 here</h4> */}
-          <h4 style={styles.words}>
-            here will put the thrd porject done in this clas, blah balh blah. it
-            will be done in two week and probably have somethig t odo with
-            coffee beans, hope you like coffee. Web Devs love coffee, drink up
-            wooo
           </h4>
         </div>
       </article>

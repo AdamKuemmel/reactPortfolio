@@ -2,6 +2,26 @@
   justify-content: flex-end;
   margin-right: 4%;
 }
+#bHide {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+}
+#projIMG {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  margin-top: 5%;
+}
+#projWords {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin-left: 23%;
+  margin-right: 23%;
+  margin-top: 1%;
+}
 
 @media screen and (max-width: 990px) {
   .keyImage {
@@ -15,5 +35,12 @@
   }
   .aboutH1 {
     text-align: center;
+  }
+  #projIMG {
+    width: 90%;
+  }
+  #projWords {
+    margin-left: 6%;
+    margin-right: 6%;
   }
 }

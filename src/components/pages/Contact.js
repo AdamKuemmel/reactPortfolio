@@ -3,25 +3,23 @@ import github from "../../images/github.png";
 import linkedin from "../../images/linkedin.png";
 
 const styles = {
-  logo1: {
-    maxWidth: "15%",
+  logo: {
+    maxWidth: "50%",
     display: "block",
-    marginLeft: "95%",
-    marginRight: "",
+    marginLeft: "auto",
+    marginRight: "auto",
   },
-  logo2: {
-    maxWidth: "10%",
+  Alogo: {
+    maxWidth: "20%",
     display: "block",
-    marginLeft: "25%",
-    marginRight: "",
+    marginLeft: "auto",
+    marginRight: "auto",
   },
-  logoCon: { flexDirection: "row", display: "flex", marginBottom: "3%" },
-
-  singleProj: {
-    // display: "flex",
-
-    backgroundColor: "#0c0c0c",
-    color: "#edf1cf",
+  logoCon: {
+    flexDirection: "row",
+    display: "flex",
+    marginBottom: "3%",
+    alignContent: "",
   },
 
   title: {
@@ -38,8 +36,9 @@ const styles = {
     marginLeft: "auto",
     marginRight: "auto",
     flexDirection: "column",
-    maxWidth: "20rem",
-    backgroundColor: "#edf1cf",
+    maxWidth: "25rem",
+    backgroundColor: "#0c0c0c",
+    color: "#edf1cf",
     fontFamily: "'Montserrat', sans-serif",
   },
   input: {
@@ -55,6 +54,20 @@ const styles = {
     marginBottom: "3%",
     color: "#edf1cf",
   },
+  transBox: {
+    border: "0",
+    backgroundColor: "transparent",
+    borderBottom: "1px solid #edf1cf",
+    marginBottom: "3%",
+    color: "#edf1cf",
+  },
+  subBox: {
+    border: "0",
+    backgroundColor: "transparent",
+    border: "1px solid #edf1cf",
+    marginBottom: "1%",
+    color: "#edf1cf",
+  },
 };
 export default function Contact() {
   return (
@@ -65,21 +78,27 @@ export default function Contact() {
           If you would like to contact me, here are a few ways to do so.
         </p>
         <div style={styles.logoCon}>
-          <a href="https://github.com/AdamKuemmel" target="no_blank">
+          <a
+            href="https://github.com/AdamKuemmel"
+            style={styles.Alogo}
+            target="no_blank"
+          >
             <img
-              style={styles.logo1}
+              style={styles.logo}
               src={github}
               alt="Github Link"
               class="img"
             />
           </a>
+
           <a
             href="https://www.linkedin.com/in/adam-kuemmel-74a3421b6/"
             target="no_blank"
+            style={styles.Alogo}
           >
             <img
               src={linkedin}
-              style={styles.logo2}
+              style={styles.logo}
               alt="LinkedIn"
               class="img"
             />
@@ -89,13 +108,25 @@ export default function Contact() {
       <div>
         <form
           style={styles.form}
+          id="bhide"
           action="https://mailthis.to/adamkuemmel@gmail.com"
           method="POST"
           encType="multipart/form-data"
         >
-          <input type="text" name="name" placeholder="Your name" />
-          <input type="email" name="_replyto" placeholder="Your email" />
+          <input
+            style={styles.transBox}
+            type="text"
+            name="name"
+            placeholder="Your name"
+          />
+          <input
+            style={styles.transBox}
+            type="email"
+            name="_replyto"
+            placeholder="Your email"
+          />
           <textarea
+            style={styles.transBox}
             name="message"
             placeholder="Enter your message here"
           ></textarea>
@@ -104,7 +135,7 @@ export default function Contact() {
           <input type="hidden" name="_after" value="https://localhost:3000" />
           <input type="hidden" name="_honeypot" value="" />
           <input type="hidden" name="_confirmation" value="" />
-          <input type="submit" value="Send" />
+          <input type="submit" style={styles.subBox} value="Send" />
         </form>
       </div>
     </div>
