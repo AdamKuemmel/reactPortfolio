@@ -1,7 +1,9 @@
 import React from "react";
 import github from "../../images/github.png";
 import linkedin from "../../images/linkedin.png";
+import axios from "axios";
 
+//style sheets
 const styles = {
   logo: {
     maxWidth: "50%",
@@ -65,10 +67,11 @@ const styles = {
     border: "0",
     backgroundColor: "transparent",
     border: "1px solid #edf1cf",
-    marginBottom: "1%",
+    marginBottom: "-1%",
     color: "#edf1cf",
   },
 };
+
 export default function Contact() {
   return (
     <div>
@@ -109,7 +112,8 @@ export default function Contact() {
         <form
           style={styles.form}
           id="bhide"
-          action="https://mailthis.to/adamkuemmel@gmail.com"
+          name="emailForm"
+          action="https://formspree.io/f/xgerbeza"
           method="POST"
           encType="multipart/form-data"
         >
@@ -131,10 +135,6 @@ export default function Contact() {
             placeholder="Enter your message here"
           ></textarea>
 
-          <input type="hidden" name="_subject" value="Contact form submitted" />
-          <input type="hidden" name="_after" value="https://localhost:3000" />
-          <input type="hidden" name="_honeypot" value="" />
-          <input type="hidden" name="_confirmation" value="" />
           <input type="submit" style={styles.subBox} value="Send" />
         </form>
       </div>

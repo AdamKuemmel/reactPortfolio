@@ -12,7 +12,10 @@ const styles = {
     display: "block",
     marginLeft: "auto",
     marginRight: "auto",
+    marginTop: "8%",
     marginBottom: "4%",
+    backgroundColor: "#0c0c0c",
+    border: "0",
   },
   img: {
     maxWidth: " 20rem",
