@@ -46,7 +46,7 @@ export default function Project() {
     <div>
       <h1 style={styles.title}>Recent Work</h1>
       <article className="bg-image hover-zoom" style={styles.singleProj}>
-        <a href="https://secret-reef-68503.herokuapp.com/" target="_blank">
+        <a href="https://damp-coast-09297.herokuapp.com/" target="_blank">
           <img src={placeHolder} id="projIMG" alt="notetakerproj" />
         </a>
         <div>
