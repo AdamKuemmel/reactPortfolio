@@ -59,6 +59,19 @@ export default function Project() {
           </h4>
         </div>
       </article>
+      <article className="bg-image hover-zoom" style={styles.singleProj}>
+        <a href="https://damp-coast-09297.herokuapp.com/" target="_blank">
+          <img src={placeHolder} id="projIMG" alt="notetakerproj" />
+        </a>
+        <div>
+          <h4 id="projWords">
+            FitConnect is a Progressive Web Application that I built to help
+            track my workouts. You can locally install this App on any device
+            and input all of your workouts, and even track them in multiple
+            styles of charts in the fitness dashboard.
+          </h4>
+        </div>
+      </article>
       <article style={styles.singleProj}>
         <a
           href="https://adamkuemmel.github.io/theVibeForecast/"

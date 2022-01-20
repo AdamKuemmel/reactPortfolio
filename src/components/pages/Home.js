@@ -32,8 +32,8 @@ export default function Home({ currentPage, handlePageChange }) {
         Full-Stack skills with a simple and creative touch.
       </h1>
       <p style={styles.p} className="homeP">
-        You will find all of my beautiful user-friendly work presented here,
-        Click the keyboard to see!
+        You will find recent projects and work presented here, Click the
+        keyboard to see!
       </p>
     </div>
   );
