@@ -61,7 +61,7 @@ export default function Project() {
         </div>
       </article>
       <article className="bg-image hover-zoom" style={styles.singleProj}>
-        <a href="https://damp-coast-09297.herokuapp.com/" target="_blank">
+        <a href="https://sheltered-coast-12686.herokuapp.com/" target="_blank">
           <img src={fitConnect} id="projIMG" alt="notetakerproj" />
         </a>
         <div>
