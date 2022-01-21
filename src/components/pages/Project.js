@@ -2,6 +2,7 @@ import React from "react";
 import vibeForecast from "../../images/vibeForecast.png";
 import sideSwipe from "../../images/sideSwipe.png";
 import placeHolder from "../../images/placeHolder.png";
+import fitConnect from "../../images/fitConnect.png";
 
 const styles = {
   singleProj: {
@@ -61,7 +62,7 @@ export default function Project() {
       </article>
       <article className="bg-image hover-zoom" style={styles.singleProj}>
         <a href="https://damp-coast-09297.herokuapp.com/" target="_blank">
-          <img src={placeHolder} id="projIMG" alt="notetakerproj" />
+          <img src={fitConnect} id="projIMG" alt="notetakerproj" />
         </a>
         <div>
           <h4 id="projWords">
