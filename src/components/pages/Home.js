@@ -24,13 +24,8 @@ const styles = {
 const Home = () => {
   return (
     <div style={styles.div}>
-      <a target="_blank" href="/project">
-        <img
-          className="keyImage"
-          href="/project"
-          src={keyboard}
-          style={styles.img}
-        />
+      <a href="/project">
+        <img className="keyImage" src={keyboard} style={styles.img} />
       </a>
 
       <div class="sign">
