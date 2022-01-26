@@ -8,7 +8,7 @@ const styles = {
     fontSize: "32px",
   },
   p: {
-    fontSize: "18px",
+    fontSize: "35px",
   },
   div: {
     textAlign: "center",
@@ -28,13 +28,18 @@ export default function Home({ currentPage, handlePageChange }) {
         <img className="keyImage" src={keyboard} style={styles.img} />
       </a>
 
-      <h1 style={styles.h1} className="homeH1">
-        Full-Stack skills with a simple and creative touch.
-      </h1>
-      <p style={styles.p} className="homeP">
-        You will find recent projects and work presented here, Click the
-        keyboard to see!
-      </p>
+      <div class="sign">
+        <span class="fast-flicker">Full Stack</span> skills with a
+        <span class="flicker"> simple</span> and
+        <span class="flicker"> creative</span> touch.
+      </div>
+
+      <div class="deconstructed">
+        <div> Click the keyboard to see more!</div>
+        <div> Click the keyboard to see more!</div>
+        <div> Click the keyboard to see more!</div>
+        <div> Click the keyboard to see more!</div>
+      </div>
     </div>
   );
 }

@@ -20,7 +20,8 @@ const styles = {
 export default function About() {
   return (
     <div style={styles.div} className="aboutH1">
-      <h1>Adam Kuemmel</h1>
+      <h1 class="about-test">Adam Kuemmel</h1>
+      <h1 class="about-test2">Web Developer</h1>
       <p style={styles.p}>
         Hello, my name is Adam and I am a full stack web developer born and
         raised in New York. My love for web development all began in 2008 during
