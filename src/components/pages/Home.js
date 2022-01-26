@@ -17,14 +17,14 @@ const styles = {
   },
   img: {
     maxHeight: "60vh",
-    marginTop: "2%",
+    marginTop: "7%",
   },
 };
 
-export default function Home({ currentPage, handlePageChange }) {
+const Home = () => {
   return (
     <div style={styles.div}>
-      <a onClick={() => handlePageChange("Project")} target="_blank">
+      <a target="_blank">
         <img className="keyImage" src={keyboard} style={styles.img} />
       </a>
 
@@ -34,7 +34,7 @@ export default function Home({ currentPage, handlePageChange }) {
         <span class="flicker"> creative</span> touch.
       </div>
 
-      <div class="deconstructed">
+      <div class="deconstructed" id="deconstructed">
         <div> Click the keyboard to see more!</div>
         <div> Click the keyboard to see more!</div>
         <div> Click the keyboard to see more!</div>
@@ -42,4 +42,6 @@ export default function Home({ currentPage, handlePageChange }) {
       </div>
     </div>
   );
-}
+};
+
+export default Home;

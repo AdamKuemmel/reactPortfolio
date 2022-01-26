@@ -5,11 +5,19 @@ import About from "./pages/About";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 import LightboxExample from "./pages/Lightbox";
+import TestNav from "./TestNav";
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from "@apollo/client";
+import { setContext } from "@apollo/client/link/context";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
 
-  // TODO: Add a comment describing the functionality of this method
   const renderPage = () => {
     if (currentPage === "Home") {
       return (
@@ -35,7 +43,7 @@ export default function PortfolioContainer() {
   return (
     <div>
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-
+      {/* <TestNav /> */}
       {renderPage()}
     </div>
   );

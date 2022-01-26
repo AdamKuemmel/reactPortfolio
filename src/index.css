@@ -46,6 +46,9 @@
   .sign {
     margin: 2vh 10px;
   }
+  #deconstructed {
+    font-size: 4vw;
+  }
 }
 
 /* flicker test */

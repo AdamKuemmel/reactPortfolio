@@ -6,10 +6,11 @@ const styles = {
     marginTop: "15%",
   },
   p: {
-    marginTop: "4%",
+    marginTop: "5%",
     fontSize: "15px",
   },
   div: {
+    marginTop: "10vh",
     marginRight: "14%",
     marginLeft: "14%",
     fontFamily: "'Montserrat', sans-serif",

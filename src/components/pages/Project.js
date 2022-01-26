@@ -19,7 +19,7 @@ const styles = {
     fontSize: "3rem",
     textAlign: "center",
     fontWeight: "bold",
-    marginTop: "2%",
+    marginTop: "12vh",
   },
   img: {
     display: "block",
