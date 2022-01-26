@@ -6,7 +6,7 @@ const styles = {
     marginTop: "15%",
   },
   p: {
-    marginTop: "5%",
+    marginTop: "10%",
     fontSize: "15px",
   },
   div: {
@@ -20,7 +20,7 @@ const styles = {
 
 export default function About() {
   return (
-    <div style={styles.div} className="aboutH1">
+    <div style={styles.div}>
       <h1 class="about-test">Adam Kuemmel</h1>
       <h1 class="about-test2">Web Developer</h1>
       <p style={styles.p}>
