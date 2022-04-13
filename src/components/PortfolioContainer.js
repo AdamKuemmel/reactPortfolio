@@ -29,6 +29,7 @@ export default function PortfolioContainer() {
         <>
           <About />
           {/* <LightboxExample /> */}
+          <h1>temp</h1>
         </>
       );
     }
